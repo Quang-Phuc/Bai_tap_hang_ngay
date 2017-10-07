@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<conio.h>
+typedef struct
+{
+    int xbutton;
+    int ybutton;
+    char *name;
+    int statusbutton;
+}Button;
+void VarButton(Button &B,char *s,int x,int y)
+{
+    B.xbutton=x;
+    B.ybutton=y;
+    B.statusbutton=1;
+    B.name=s;
+}
+void ShowButton(Button B)
+{
+   if(B.statusbutton==1)
+   {
+    textbackground(15);
+    gotoxy(B.xbutton,B.ybutton);textcolor(LIGHTRED);cprintf("%s",B.name);
+    textbackground(BLACK);
+    }
+}
+void EnableButton(Button& B)
+{
+    B.statusbutton=1;
+}
+void DisableButton(Button& B)
+{
+    textbackground(15);
+    gotoxy(B.xbutton,B.ybutton);textcolor(LIGHTGRAY);cprintf("%s",B.name);
+    B.statusbutton=0;
+    textbackground(BLACK);
+}
+int ClickButton(Button B,int xchuot,int ychuot)
+{
+    if(B.statusbutton==1)
+    {
+        if(xchuot>=(B.xbutton-1)*8&&xchuot<=(B.xbutton+strlen(B.name)-1-1)*8&&ychuot==(B.ybutton-1)*8)
+        return 1;
+    }
+    return 0;
+}
+void EffectClick(Button B)
+{
+    gotoxy(B.xbutton,B.ybutton);textcolor(LIGHTCYAN+BLINK);cprintf("%s",B.name);
+    delay(200);
+    ShowButton(B);
+}
+void EffectClickNonButton(int x,int y)
+{
+    gotoxy(x,y);textbackground(WHITE);textcolor(WHITE);cprintf(".");
+    textbackground(BLACK);
+    delay(200);
+}

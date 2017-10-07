@@ -1,0 +1,14 @@
+D:\Practives\baitap.exe
+D:\Practives\chuan.exe
+D:\Practives\HelloWord.exe
+D:\Practives\kiemtra.exe
+D:\Practives\Thuc_hanh2.exe
+D:\Practives\0914\ex1\Hello.exe
+D:\Practives\0914\ex2\Hello.exe
+D:\Practives\0914\ex2\kiemtra.exe
+D:\Practives\0917\bai2.exe
+D:\Practives\0917\baitap2.exe
+D:\Practives\0919\ex1\main.exe
+D:\Practives\0919\ex3\baitap2.exe
+D:\Practives\0919\ex4\tinh.exe
+D:\Practives\New folder\kiemtra.exe

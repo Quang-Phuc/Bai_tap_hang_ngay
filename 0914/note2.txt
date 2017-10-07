@@ -1,0 +1,12 @@
+C:\Users\Admin>cd C:\Qt\Tools\mingw530_32\bin
+
+C:\Qt\Tools\mingw530_32\bin>g++ D:\kiemtra.cpp -g -Wall -Werror -lm -static-libstdc++ -static-libgcc -static -o D:kiemtra.exe
+
+C:\Qt\Tools\mingw530_32\bin>gdb kiemtra.exe
+(gdb) list 1
+//chay an enter chay cho het chuong trinh
+(gdb) b 83// den cho can xet
+(gdb) b 84
+(gdb) b 85
+(gdb) r
+(gdb) c

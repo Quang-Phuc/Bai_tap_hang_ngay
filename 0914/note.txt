@@ -1,0 +1,1 @@
+g++ D:\Practives\0914\ex2\kiemtra.cpp -g -Wall -Werror -lm -static-libstdc++ -static-libgcc -static -o D:\Practives\0914\ex2\kiemtra.exe -std=c++11
